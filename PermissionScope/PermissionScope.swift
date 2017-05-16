@@ -313,6 +313,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
             button.setTitle("Enable \(type.prettyDescription)".localized.uppercased(), for: .normal)
         default:
             button.setTitle("Allow \(type)".localized.uppercased(), for: .normal)
+            print("test rebase")
         }
         
         button.addTarget(self, action: Selector("request\(type)"), for: .touchUpInside)
